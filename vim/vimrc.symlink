@@ -1,0 +1,41 @@
+syntax on
+filetype off
+set nocompatible
+
+set fileformat=unix
+set encoding=UTF-8
+
+" Key remapping
+imap jj <Esc>
+
+" Basic style
+set number relativenumber
+set cursorline
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set autoindent smartindent smarttab expandtab
+set signcolumn=yes
+set t_Co=256
+
+" Python specific
+autocmd BufNewFile,BufRead *.py
+	\ set tabstop=4 |
+	\ set softtabstop=4 |
+	\ set shiftwidth=4 |
+    \ set textwidth=79
+highlight BadWhitespace ctermbg=red guibg=red
+autocmd BufNewFile,BufRead *.py match BadWhitespace /\s\+$/
+let python_highlight_all=1
+
+" Plugin system using Vundle
+" Use :PluginInstall to install all plugins
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'nvie/vim-flake8'
+
+call vundle#end()
+
+filetype plugin indent on
