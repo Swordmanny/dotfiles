@@ -17,6 +17,7 @@ set shiftwidth=2
 set autoindent smartindent smarttab expandtab
 set signcolumn=yes
 set t_Co=256
+colorscheme zenburn
 
 " Python specific
 autocmd BufNewFile,BufRead *.py
@@ -33,9 +34,6 @@ let python_highlight_all=1
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
-Plugin 'vim-syntastic/syntastic'
-Plugin 'nvie/vim-flake8'
-
 call vundle#end()
 
 filetype plugin indent on

@@ -129,7 +129,7 @@ install_dotfiles () {
 }
 
 
-# setup_gitconfig
+setup_gitconfig
 install_dotfiles
 
 echo ''
