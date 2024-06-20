@@ -1,5 +1,9 @@
+#!/bin/sh
 
 set -e
 
+cd "$(dirname $0)"/..
+
 mkdir -p ~/.vim/colors
-ln -s "$(pwd)/vim/colors/zenburn.vim" ~/.vim/colors/zenburn.vim
+# Forcefully create a link
+ln -fs "$(pwd)/vim/colors/zenburn.vim" ~/.vim/colors/zenburn.vim
