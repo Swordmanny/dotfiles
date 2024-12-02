@@ -7,6 +7,9 @@ set encoding=UTF-8
 
 " Key remapping
 imap jj <Esc>
+"" FZF
+nnoremap <C-p> :Files<Cr>
+nnoremap <C-g> :Rg<Cr>
 
 " Basic style
 set number relativenumber
@@ -34,6 +37,12 @@ let python_highlight_all=1
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'preservim/vim-markdown'
+Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plugin 'junegunn/fzf.vim'
 call vundle#end()
+
+
 
 filetype plugin indent on

@@ -4,7 +4,7 @@ export ZSH=~/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="random"
+ZSH_THEME="funky"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -20,3 +20,6 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 export EDITOR='vim'
+
+# insall fzf first: fzf needs to be 0.48 or later
+source <(fzf --zsh)
