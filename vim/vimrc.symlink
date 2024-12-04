@@ -20,6 +20,7 @@ set shiftwidth=2
 set autoindent smartindent smarttab expandtab
 set signcolumn=yes
 set t_Co=256
+" Switch btw eink and color
 colorscheme zenburn
 
 " Python specific
