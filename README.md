@@ -1,4 +1,11 @@
 
+
+# Package Manager
+
+## MacOS
+- Homebrew
+
+
 # Terminal
 
 Tmux: terminal multiplexer

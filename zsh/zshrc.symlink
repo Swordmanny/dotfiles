@@ -22,5 +22,4 @@ export LANG=en_US.UTF-8
 
 export EDITOR='vim'
 
-# insall fzf first: fzf needs to be 0.48 or later
-source <(fzf --zsh)
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
