@@ -1,9 +1,5 @@
 #!/bin/sh
 
 echo "Install fzf: \n"
-
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
-
 # install using brew
-# brew install fzf
+brew install fzf

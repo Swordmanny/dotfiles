@@ -1,15 +1,16 @@
 
-
 # Package Manager
 
-## MacOS
-- Homebrew
+## Git
 
+## MacOS: Homebrew
 
 # Terminal
 
-Tmux: terminal multiplexer
-`brew install tmux`
+- tmux
+- tree
+- fzf
+
 
 
 
@@ -17,7 +18,7 @@ Tmux: terminal multiplexer
 
 ## Softwares
 
-    2. [iTerm2](https://iterm2.com/)
+    1. [iTerm2](https://iterm2.com/)
     2. Chrome Browser
       - [Vimium navigator](https://vimium.github.io/)
       - Self-host bitwarden
